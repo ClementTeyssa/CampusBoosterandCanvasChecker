@@ -5,7 +5,7 @@ FROM golang:alpine as env
 
 # Add support for Delve debugger.
 RUN apk add --no-cache ca-certificates git
-RUN go get github.com/derekparker/delve/cmd/dlv
+RUN go get github.com/go-delve/delve/cmd/dlv
 
 ##########################################################
 # Prepare a build container with all dependencies inside #
