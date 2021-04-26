@@ -1,8 +1,8 @@
 version: "3.4"
 
 services:
-  app:
+  supchecker:
     build:
       context: ./
       target: exec
-    image: app-prod:latest
+    image: supchecker-prod:latest
